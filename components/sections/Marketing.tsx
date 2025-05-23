@@ -13,7 +13,7 @@ export const Marketing = () => {
             growing your membership organization.
         </p>
 
-        <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid lg:grid-cols-3 gap-6 md:gap-8 place-items-center">
             {[
                 {
                     title: "Creating Streamlined Safeguarding Processes with OneRen",
@@ -29,13 +29,13 @@ export const Marketing = () => {
                 },
             ].map((card, i) => (
                 <div key={i}
-                     className="w-[250px] sm:w-[300px] h-44 sm:h-[300px] bg-auto overflow-hidden relative flex justify-center m-auto lg:m-0">
+                     className="w-[250px] sm:w-[300px] h-48 sm:h-[300px] bg-auto overflow-hidden relative flex justify-center m-auto lg:m-0">
                     <Image
                         src={card.image || "/placeholder.svg"}
                         alt={card.title}
                         width={300}
                         height={200}
-                        className="w-full h-36 sm:h-[239px] object-cover rounded-xl"
+                        className="w-full h-40 sm:h-[239px] object-cover rounded-xl"
                     />
                     <div className="p-2 sm:p-6 bg-[#F5F7FA] w-5/6 absolute bottom-0 m-auto rounded-xl">
                         <h3 className="font-bold text-[#717171] mb-1 sm:mb-3 md:mb-4 text-center text-xs sm:text-sm">{card.title}</h3>
